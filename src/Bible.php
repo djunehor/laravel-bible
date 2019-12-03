@@ -42,7 +42,7 @@ class Bible
 
     public function book($bookName) {
         $this->bible = json_decode(file_get_contents(__DIR__ . "/../bibles/$this->lang/Books.json"), true);
-        $this->book = $bookName;
+        $this->book = ucfirst($bookName);
         return $this;
     }
 
