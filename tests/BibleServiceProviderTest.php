@@ -2,8 +2,8 @@
 
 namespace Djunehor\Logos\Test;
 
-use Djunehor\Logos\BibleServiceProvider;
 use Djunehor\Logos\Bible;
+use Djunehor\Logos\BibleServiceProvider;
 use Mockery as m;
 
 class BibleServiceProviderTest extends TestCase
