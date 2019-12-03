@@ -52,7 +52,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Djunehor\\Bible\\BibleServiceProvider"
+        "Djunehor\\Logos\\BibleServiceProvider"
       ],
       "aliases": {
         "Grammar": "Djunehor\\Logos\\Facades\\BibleFacade"
