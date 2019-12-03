@@ -8,7 +8,6 @@ use Illuminate\Support\Str;
 
 class BibleTest extends TestCase
 {
-
     public function testDefaultToEnglishKjv()
     {
         $bible = new Bible();
@@ -72,24 +71,23 @@ class BibleTest extends TestCase
         $bible->chapter(6);
         $bible->verse(11);
 
-        $this->assertEquals("Then these men assembled, and found Daniel praying and making supplication before his God.", $bible->getVerse());
+        $this->assertEquals('Then these men assembled, and found Daniel praying and making supplication before his God.', $bible->getVerse());
     }
 
     public function testGet()
     {
         $bible = new Bible();
 
-        $this->assertEquals("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.", $bible->get('John 3:16'));
+        $this->assertEquals('For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.', $bible->get('John 3:16'));
     }
 
     public function testFacade()
     {
-        $this->assertEquals("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.", BibleFacade::get('John 3:16'));
+        $this->assertEquals('For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.', BibleFacade::get('John 3:16'));
     }
 
     public function testHelper()
     {
-        $this->assertEquals("For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.", bible('John 3:16'));
+        $this->assertEquals('For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.', bible('John 3:16'));
     }
-
 }
