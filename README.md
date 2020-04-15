@@ -58,11 +58,11 @@ After installing the package, you will have to register it in `bootstrap/app.php
 ### Step 2 - Publishing files
 Run:
 `php artisan vendor:publish --tag=laravel-bible`
-This will move the migration file, seeder file and config file to your app. You can change the entries table name in config/laravel-grammar.php
+This will move the migration file, seeder file and config file to your app. You can change the entries table name in `config/laravel-grammar.php`
 
 ## Usage
 ```php
-use Djunehor\Logos\Bible;`
+use Djunehor\Logos\Bible;
 
 $bible = new Bible();
 ```
@@ -99,16 +99,16 @@ $verse = $bible->get('Genesis 22:6');
 
 ### Options
 ```php
-//Bible Class accepts 2 parameters: $lang and $version
+// Bible Class accepts 2 parameters: $lang and $version
 $lang = 'en';
 
-$bible = new Bible('en'); //use English version
+$bible = new Bible('en'); // use English version
 $bible = new Bible('en', 'kjv'); // use English KJV bible
 ```
 
 ### Using Facade
 In order to use the Bible facade:
-- First add `    'Bible' => Djunehor\Logos\Facades\BibleFacade::class,` to aliases in `config/app.php`
+- First add `'Bible' => Djunehor\Logos\Facades\BibleFacade::class,` to aliases in `config/app.php`
 - Then use like `Bible::get('John 3:16');`
 
 ### Using Helper
