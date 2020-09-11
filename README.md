@@ -23,8 +23,6 @@ Laravel Bible helps you fetch from the Holy Bible
     - [Acknowledgement](#acknowledgement)
 
 ## Installation
-
-### Step 1
 You can install the package via composer:
 
 ```shell
@@ -54,11 +52,6 @@ After installing the package, you will have to register it in `bootstrap/app.php
     $app->register(Djunehor\Logos\BibleServiceProvider::class);
 ];
 ```
-
-### Step 2 - Publishing files
-Run:
-`php artisan vendor:publish --tag=laravel-bible`
-This will move the migration file, seeder file and config file to your app. You can change the entries table name in `config/laravel-grammar.php`
 
 ## Usage
 ```php
