@@ -1,5 +1,5 @@
 # Laravel Bible
-[![CircleCI](https://circleci.com/gh/djunehor/laravel-bible.svg?style=svg)](https://circleci.com/gh/djunehor/laravel-bible)
+[![Github Action](https://action-badges.now.sh/djunehor/laravel-bible?action=PHP%20Composer)
 [![Latest Stable Version](https://poser.pugx.org/djunehor/laravel-bible/v/stable)](https://packagist.org/packages/djunehor/laravel-bible)
 [![Total Downloads](https://poser.pugx.org/djunehor/laravel-bible/downloads)](https://packagist.org/packages/djunehor/laravel-bible)
 [![License](https://poser.pugx.org/djunehor/laravel-bible/license)](https://packagist.org/packages/djunehor/laravel-bible)
